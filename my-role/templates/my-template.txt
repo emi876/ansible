@@ -1,0 +1,3 @@
+My custom variable is {{ my_custom_variable }}
+The hostname of this webserver is {{ ansible_hostname }}
+It is running on {{ ansible_os_family }}

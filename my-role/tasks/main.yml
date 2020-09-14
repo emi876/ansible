@@ -1,0 +1,7 @@
+---
+# tasks file for setup-apache
+- name: render my teplate
+  template:
+    src: my-template.txt
+    dest: /home/ansadmin/my-template.txt
+    mode: 0777 

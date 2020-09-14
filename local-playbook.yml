@@ -1,0 +1,10 @@
+---
+- name: "Playing with Ansible"
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: "just to navigate"
+    shell: "ls -lrt"
+    register: "output"
+
+  - debug: vat=output.stdout_lines

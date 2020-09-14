@@ -1,0 +1,3 @@
+My custom variable is DevOps
+The hostname of this webserver is ansible-controller
+It is running on RedHat

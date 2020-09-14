@@ -1,0 +1,16 @@
+---
+- name: this playbook installs tree
+  hosts: all
+  become: true
+  tasks:
+  - name: install tree package on RHEL
+    yum:
+      name: tree
+      state: installed
+    when: ansible_os_family == "RedHat"
+
+  - name: install tree package on RHEL
+    apt:
+      name: tree
+      state: present
+    when: ansible_os_family == "Debian"

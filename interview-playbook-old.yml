@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: get os details
+    template:
+      src: template.txt
+      dest: /home/ansadmin/template.txt
+      mode: 0777 
